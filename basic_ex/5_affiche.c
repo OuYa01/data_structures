@@ -1,5 +1,10 @@
 #include "rep.h"
 
+/**
+ * affiche_nom - this function affiche name of any person by giving the number of person
+ * @rep: repertoire
+ * @num: the number of person
+ */
 void affiche_nom(personne rep[], int num)
 {
     int indice = indice_num(rep, num);

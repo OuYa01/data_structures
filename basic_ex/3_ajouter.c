@@ -1,5 +1,9 @@
 #include "rep.h"
 
+/**
+ * ajouter - this function add new person by name and number phone
+ * @rep: repertoire where the information will be stock in
+ */
 void ajouter(personne rep[])
 {
     int size = taille(rep);
