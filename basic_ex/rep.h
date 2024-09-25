@@ -24,7 +24,7 @@ void init_repertoire(personne rep[]);
 int taille(personne rep[]);
 void ajouter(personne rep[]);
 int indice_num(personne rep[], int num);
-void affiche_nome(personne rep[], int num);
+void affiche_nom(personne rep[], int num);
 
 
 #endif //REP_H

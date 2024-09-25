@@ -14,7 +14,7 @@ int taille(personne rep[])
     for (i = 0; i < TMAX; i++)
     {
         if (rep[i].active == 1)
-            count++
+            count++;
         else
             return (count);
     }
