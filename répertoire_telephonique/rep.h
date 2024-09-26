@@ -2,6 +2,7 @@
 #define REP_H
 
 #include <stdio.h>
+#include <string.h>
 
 #define TMAX 100   //size max of repertoire
 
