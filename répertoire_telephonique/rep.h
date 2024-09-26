@@ -26,6 +26,11 @@ int taille(personne rep[]);
 void ajouter(personne rep[]);
 int indice_num(personne rep[], int num);
 void affiche_nom(personne rep[], int num);
+int nb_occ_numero(personne rep[], int num);
+void supprime_element(personne rep[], int n);
+void supprime_1_apparition(personne rep[], int num);
+void supprime_apparitions(personne rep[], int num);
+void supprime_doublons(personne rep[], int num);
 
 
 #endif //REP_H
