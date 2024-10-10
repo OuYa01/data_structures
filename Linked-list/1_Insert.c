@@ -90,3 +90,52 @@ Node *Insertion_après_un_élément(Node *head, int n, int val)
 
         return (head);
 }
+
+/**
+ * 3 - Insertion_avant_un_élément - Insérer un entier donné avant un élément de la liste
+ * @head: pointer to haed node
+ * @n: the data will be in new node
+ * @val: the value to search about
+ *
+ * Return: head pointer
+ */
+Node *Insertion_avant_un_élément(Node *head, int n, int val)
+{
+        Node *new = (Node *)malloc(sizeof(Node));
+
+        if (new == NULL)
+        {
+                printf("Memory allocation failure\n");
+                return (head);
+        }
+
+        new->data = n;
+        new->link = NULL;
+
+        if (head == NULL)
+        {
+                printf("the list is empty. cannot insert an node\n");
+                free(new);
+                return (head);
+        }
+
+        Node *temp1 = head;
+        Node *temp2 = NULL;
+        while (temp1 != NULL && temp1->data != val)
+        {
+                temp2 = temp1;
+                temp1 = temp1->link;
+        }
+
+        if (temp1 == NULL)
+        {
+                printf("Element %s not found in list\n" val);
+                free(new);
+                return (head);
+        }
+
+        new->link = temp1;
+        temp2->link = new;
+
+        return (head);
+}
