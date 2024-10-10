@@ -19,5 +19,9 @@ typdef struct Node
 
 }Node;
 
+/*prototype*/
+Node* insertion_au_debut(Node* head, int n);
+Node* insertion_fin(Node* head, int n);
+
 
 #endif
