@@ -22,6 +22,11 @@ typdef struct Node
 /*prototype*/
 Node* insertion_au_debut(Node* head, int n);
 Node* insertion_fin(Node* head, int n);
+Node *Insertion_avant_un_élément(Node *head, int n, int val);
+Node *Insertion_après_un_élément(Node *head, int n, int val);
 
+Node* sup(Node* head, int val);
+void Affichage(Node* head);
+int taill_list(Node* head);
 
 #endif
