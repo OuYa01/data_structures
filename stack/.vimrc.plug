@@ -1,0 +1,5 @@
+call plug#begin('~/.vim/plugged')
+
+plug 'tpope/vim-fugitive'
+
+call plug#end()
