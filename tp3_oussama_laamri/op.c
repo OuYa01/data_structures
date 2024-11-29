@@ -1,6 +1,6 @@
 #include "systeme.h"
 
-/**prototype Partie 1 : Arbre Binaire de Recherche (BST)*/
+/**Partie 1 : Arbre Binaire de Recherche (BST)*/
 
 
 /**
@@ -77,7 +77,7 @@ Node* search(Node* root, int id)
 }
 
 /**
-* printInorder : print the tree inorder(Ordre infixé)
+* printInorder : print the tree inorder(Ordre infixÃ©)
 * @root: pointer to the root of tree
 * Return : void
 *
