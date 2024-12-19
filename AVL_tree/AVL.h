@@ -30,6 +30,7 @@ int height(Node* node);
 int maxN(int a, int b);
 Node* RR(Node* root);
 Node* LR(Node* root);
+void preOrder(Node * root);
 void PostOrder(Node* root);
 void inOrder(Node* root);
 
