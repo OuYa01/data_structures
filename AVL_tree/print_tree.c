@@ -1,6 +1,14 @@
 #include "AVL.h"
 
-
+void preOrder(Node * root)
+{
+    if (root != NULL)
+    {
+        printf("%d\n", root->data);
+        preOrder(root->left);
+        preOrder(root->right);
+    }
+}
 void PostOrder(Node* root)
 {
     // lrn
