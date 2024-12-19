@@ -1,18 +1,28 @@
 #include "AVL.h"
 
 
-int main(void)
+int main()
 {
-    Node* root = NULL;
+  struct Node *root = NULL;
 
-    root = insert(root, 4);
-    root = insert(root, 3);
-    root = insert(root, 1);
-    root = insert(root, 10);
-    root = insert(root, 50);
+  /* Constructing tree given in the above figure */
+  root = insert(root, 10);
+  root = insert(root, 20);
+  root = insert(root, 30);
+  root = insert(root, 40);
+  root = insert(root, 50);
+  root = insert(root, 25);
 
-    printf("postorder\n");
-    PostOrder(root);
-    printf("Inorder\n");
-    inOrder(root);
+  /* The constructed AVL Tree would be
+            30
+           /  \
+         20   40
+        /  \     \
+       10  25    50
+  */
+
+  printf("Preorder traversal : \n");
+  preOrder(root);
+
+  return 0;
 }
