@@ -12,7 +12,7 @@
  * @link: this is a pointer to the next node 
  * 
  */
-typdef struct Node
+typedef struct Node
 {
     int data;
     struct Node* link;
@@ -20,6 +20,7 @@ typdef struct Node
 }Node;
 
 /*prototype*/
+Node* creat_element(int val);
 Node* insertion_au_debut(Node* head, int n);
 Node* insertion_fin(Node* head, int n);
 Node *Insertion_avant_un_élément(Node *head, int n, int val);
